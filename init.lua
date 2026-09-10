@@ -7,7 +7,6 @@ vim.opt.tabstop = 2         -- Number of spaces a tab counts for
 vim.opt.shiftwidth = 2      -- Number of spaces for auto-indent
 vim.opt.expandtab = true    -- Use spaces instead of tabs
 vim.opt.termguicolors = true -- Enable true color support for themes
-vim.opt.formatoptions:remove("r", "o") -- Disable continuing comment section after <CR>
 
 
 -- lazy setup
