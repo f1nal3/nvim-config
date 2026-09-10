@@ -29,4 +29,8 @@ require("lazy").setup("plugins")
 require("lsp.go")
 require("lsp.lua")
 
+require("config.treesitter")
+require("config.diagnostics")
+
 require("config.keymaps")
+

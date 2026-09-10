@@ -20,3 +20,22 @@ vim.keymap.set("n", "<leader>fg", "<cmd>FzfLua live_grep<cr>")
 vim.keymap.set("n", "<leader>fb", "<cmd>FzfLua buffers<cr>")
 vim.keymap.set("n", "<leader>fr", "<cmd>FzfLua oldfiles<cr>")
 
+-- Diagnostic navigation
+vim.keymap.set("n", "[d", function()
+  vim.diagnostic.jump({
+    count = -1,
+    float = true,
+  })
+  end, { desc = "Previous diagnostic" })
+
+vim.keymap.set("n", "]d", function()
+  vim.diagnostic.jump({
+    count = 1,
+    float = true,
+  })
+end, { desc = "Next diagnostic" })
+
+vim.keymap.set("n", "<leader>e", function()
+ vim.diagnostic.open_float()
+end, {desc = "Show diagnostic"})
+
