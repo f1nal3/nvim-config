@@ -35,7 +35,12 @@ vim.keymap.set("n", "]d", function()
   })
 end, { desc = "Next diagnostic" })
 
-vim.keymap.set("n", "<leader>e", function()
+vim.keymap.set("n", "<leader>d", function()
  vim.diagnostic.open_float()
 end, {desc = "Show diagnostic"})
+
+-- Neotree
+vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<cr>", {
+  desc = "Toggle file tree",
+})
 
