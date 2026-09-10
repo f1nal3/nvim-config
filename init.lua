@@ -28,3 +28,4 @@ require("lazy").setup("plugins")
 require("lsp.go")
 require("lsp.lua")
 
+require("config.keymaps")
