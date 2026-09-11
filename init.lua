@@ -25,6 +25,7 @@ vim.opt.rtp:prepend(lazypath) -- Add lazy to the runtime path
 
 require("lazy").setup("plugins")
 
+require("lsp.cpp")
 require("lsp.go")
 require("lsp.lua")
 

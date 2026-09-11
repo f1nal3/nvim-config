@@ -3,3 +3,5 @@
 ## Dependencies
 * go-pls
 * lua-language-server
+* clang
+
