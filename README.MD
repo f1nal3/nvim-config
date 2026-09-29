@@ -4,4 +4,5 @@
 * go-pls
 * lua-language-server
 * clang
+* tree-sitter-cli
 
