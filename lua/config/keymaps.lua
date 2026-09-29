@@ -44,3 +44,12 @@ vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<cr>", {
   desc = "Toggle file tree",
 })
 
+-- Diff view
+vim.keymap.set("n", "<leader>gd", "<cmd>DiffviewOpen<cr>", {
+  desc = "Open Diff view",
+})
+
+vim.keymap.set("n", "<leader>gq", "<cmd>DiffviewClose<cr>", {
+  desc = "Close Diff view",
+})
+
